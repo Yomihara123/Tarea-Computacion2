@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Como calcular mi IMC</title>
+	<link rel='stylesheet' href='styles.css' />
+</head>
+
+<body>
+	<header>
+		<img src="Media/0005379930.jpg" width="35%" align="right">
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>Calculadora de Indice de Masa Corporal</h1>
+		<br clear="all">
+		
+	</header>
+
+	<br>
+	<div class="separador-horizontal"></div>
+	<br>
+	
+	<div class="calculadora">
+		<img src="Media/doktuz-nutricion-indice-de-masa-corporal_2.png" align="left" width="25%">
+	
+		<h1>¡Determine Ahora su IMC!:</h1>
+		<!--<script src="script.js"></script>-->
+		<form action="index.html" class="formulario" method="post">
+			<label for="altura">Dime tu altura en Metros: </label>
+			<input type="number" id="altura" name="altura">
+			
+			<label for="peso">Dime tu peso en kilogramos: </label>
+			<input type="number" id='peso' name="peso">
+			<!--<input type="button" name="enviar" value="Enviar" onclick="enviarAlerta();">-->
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+			<span class='calcu'></span>
+		
+			<br><b><input  class ="calcular" type="button" value="Calcular" onclick="calcularProducto()"></b>
+		</form>
+		<p class="resultado">
+			<br>
+			Tu Indice de Masa Corporal es: <b><span id="imc"></span></b><br>
+			<br>Clasificacion de tu IMC: <b><span id="info"></span></b>
+			<br clear="all">
+		</p>
+	</div>
+
+	<div class="separador-horizontal"></div>
+	<div class="introduccion">
+		<img src="Media/_c4ed4529-e234-4610-a2f3-185694c51b31.jpeg" align="right" width="30%">
+		<h2>¿Qué es el IMC?</h2>
+		<p>
+
+El IMC es una medida que relaciona el peso y la altura de una persona para evaluar si su peso es saludable.
+Se utiliza como una herramienta de evaluación, pero no diagnostica la grasa corporal ni la salud de un individuo.
+
+		</p>
+
+<h3>Interpretación del IMC:</h3>
+
+Bajo peso: IMC por debajo de 18.5.
+Peso saludable: IMC entre 18.5 y 24.9.
+Sobrepeso: IMC entre 25.0 y 29.9.
+Obesidad: IMC de 30.0 o más.
+
+
+<div class="separador-horizontal"></div>
+<h3>Calculadoras del IMC:</h3>
+
+Puedes usar la Calculadora del IMC para adultos del CDC para adultos de 20 años o más.
+También puedes encontrar calculadoras en otros sitios, como The Texas Heart Institute y IMSS.
+<div class="separador-horizontal"></div>
+
+
+<h3>Consideraciones adicionales:</h3>
+
+El IMC no tiene en cuenta la composición corporal (grasa versus músculo).
+En atletas o personas con mucho músculo, un IMC superior a 25 no necesariamente indica sobrepeso.
+Siempre consulta con un profesional de la salud para una evaluación completa.
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
